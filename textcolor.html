@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<div id="red" onclick="myFunction1()">red</div>
+
+<br>
+<div id="green" onclick="myFunction2()">green</div>
+<br>
+<div id="blue" onclick="myFunction3()">blue</div>
+<br>
+
+
+<script>
+function myFunction1() {
+	if(document.getElementById("red").style.backgroundColor=="red")
+    {
+    document.getElementById("red").style.backgroundColor="white";
+}
+    else{
+    document.getElementById("red").style.backgroundColor="red";	
+
+}
+}
+
+function myFunction2() {
+	if(document.getElementById("green").style.backgroundColor=="green")
+    
+    {
+    document.getElementById("green").style.backgroundColor="white";
+}
+    else{
+    document.getElementById("green").style.backgroundColor="green";	
+
+}
+}
+function myFunction3() {
+	if(document.getElementById("blue").style.backgroundColor=="blue")
+   
+    {
+    document.getElementById("blue").style.backgroundColor="white";
+}
+    else{
+    document.getElementById("blue").style.backgroundColor="blue";	
+
+}
+}
+</script>
+
+</body>
+</html>
