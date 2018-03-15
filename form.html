@@ -1,22 +1,37 @@
-<!DOCTYPE html>
-<html>
-<body>
 
-<h1>form</h1>
-<form id="myForm" action="form.html">
-  First name: <input type="text" name="fname" id="user_input"><br>
-  Last name: <input type="text" name="lname" id="user_input"><br><br>
-  email:<input type="text" name="email" id="user_input"><br><br>
-  address:<input type="text" name="address" id="user_input"><br><br>
-  <input type="button" onclick="myFunction()" value="Submit form">
-</form>
-
-  <p><span id='display'></span></p>
-<script>
-function myFunction() {
-    document.getElementById("myForm").document.getElementById(fname);
-}
-</script>
+  </div>
+  <div id="myForm">
+    <form>
+      First name: <input type="text" name="fname" id="firstname"><br>
+      Last name: <input type="text" name="lname" id="lastname"><br><br>
+      email:<input type="text" name="email" id="email"><br><br>
+      address:<input type="text" name="address" id="address"><br><br>
+    </form>
+    <input type="button" onclick="myFunction()" value="Submit form">
+  </div>
+  <h1>hello</h1>
 
 </body>
 </html>
+<script type="text/javascript">
+  document.getElementById('show').style.display = "none";
+  function myFunction(){
+    var fname = document.getElementById('firstname').value;
+    var lname = document.getElementById('lastname').value;
+    var email=document.getElementById('email').value;
+    var address=document.getElementById('address').value;
+    if(fname == "" || lname == "" || email =="" || address =="") {
+      alert("pls fillthe fields");
+    }else{
+      document.getElementById('fname').innerHTML = fname;
+      document.getElementById('lname').innerHTML = lname;
+      document.getElementById('mail').innerHTML = email;
+      document.getElementById('addr').innerHTML = address;
+      document.getElementById('show').style.display = "block";
+      document.getElementById('myForm').style.display = "none";
+
+    }
+  }
+
+
+</script>
